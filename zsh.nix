@@ -39,7 +39,7 @@
 
 
       nixos-rebuild-full = "sudo nixos-rebuild switch --flake /etc/nixos/nixos-config#thanh-laptop --impure";
-      home-manager-rebuild = "home-manager switch --flake git+ssh://github.com/NHThanhPM/nixos-home#nixos --impure";
+      home-manager-rebuild = "home-manager switch --flake /home/thanh/nixos-home#nixos --impure";
 
       grep = "grep --color=auto";
       fgrep = "fgrep --color=auto";
@@ -69,7 +69,7 @@
     # native HM option instead of hardcoded /usr/share or /usr/local/share paths
     autosuggestion = {
       enable = true;
-      highlightStyle = "fg=244"; # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE
+      highlight = "fg=244"; # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE
     };
 
     # --- shared/prompt.zsh referenced $SYN_HIGH_PATH manually; native option instead ---
