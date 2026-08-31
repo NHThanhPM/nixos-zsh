@@ -36,6 +36,7 @@
       la = "ls -A";
       l = "ls -CF";
       history = "history 0";
+      
 
       nixos-rebuild-full = "sudo nixos-rebuild switch --flake /etc/nixos/nixos-config#thanh-laptop --impure";
       home-manager-rebuild = "home-manager switch --flake git+ssh://github.com/NHThanhPM/nixos-home#nixos --impure";
