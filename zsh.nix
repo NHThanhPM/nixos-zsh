@@ -11,7 +11,7 @@
   # Ship the Kali-style prompt script verbatim (kept as a plain file, not an
   # inline Nix string, to avoid escaping headaches with zsh's $'...' quoting
   # and ${...} parameter expansion clashing with Nix's own ${...} interpolation)
-  home.file.".zconfig/prompt.zsh".source = ./prompt.zsh;
+#   home.file.".zconfig/prompt.zsh".source = ./prompt.zsh;
 
   programs.zsh = {
     enable = true;
@@ -182,7 +182,7 @@
     ''
     # --- shared/prompt.zsh + Darwin/prompt.zsh + Linux/prompt.zsh (external file) ---
     + ''
-      source ~/.zconfig/prompt.zsh
+      source ~/nixos-zsh/prompt.zsh
     '';
   };
 }
